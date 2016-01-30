@@ -26,7 +26,8 @@ float normpdf3(in vec3 v, in float sigma)
 // filters
 vec4 gblur()
 {
-    // http://imagingsolution.net/imaging/gaussian/
+  // https://www.shadertoy.com/view/XdfGDH
+  // http://imagingsolution.net/imaging/gaussian/
     vec4 c = texture2DRect(tex0, texCoordVarying);
     const int kSize = 5;
     const int size = kSize*2 + 1;
